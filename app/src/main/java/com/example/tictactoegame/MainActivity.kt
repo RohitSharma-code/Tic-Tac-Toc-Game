@@ -76,42 +76,42 @@ class MainActivity : AppCompatActivity() {
                 b9 = btn9.getText().toString()
 
                 //condition
-                if (b1 == b2 && b3 == b4 && b1 != "") {
+                if (b1 == b2 && b2 == b3 && b1 != "") {
                     //1
-                    Toast.makeText(this, "Winner is: $b1", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Winner is: $b1 in 1st", Toast.LENGTH_SHORT).show()
                     newGame()
                 } else if (b4 == b5 && b5 == b6 && b4 != "") {
                     //2
-                    Toast.makeText(this, "Winner is: $b4", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Winner is: $b4 in 2nd", Toast.LENGTH_SHORT).show()
                     newGame()
                 } else if (b7 == b8 && b8 == b9 && b7 != "") {
                     //3
-                    Toast.makeText(this, "Winner is: $b7", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Winner is: $b7 in 3rd", Toast.LENGTH_SHORT).show()
                     newGame()
                 } else if (b1 == b4 && b4 == b7 && b1 != "") {
                     //4
-                    Toast.makeText(this, "Winner is: $b1", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Winner is: $b1 in 4th", Toast.LENGTH_SHORT).show()
                     newGame()
                 } else if (b2 == b5 && b5 == b8 && b2 != "") {
                     //5
-                    Toast.makeText(this, "Winner is: $b2", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Winner is: $b2 in 5th", Toast.LENGTH_SHORT).show()
                     newGame()
                 } else if (b3 == b6 && b6 == b9 && b3 != "") {
                     //6
-                    Toast.makeText(this, "Winner is: $b3", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Winner is: $b3 in 6th", Toast.LENGTH_SHORT).show()
                     newGame()
                 } else if (b1 == b5 && b5 == b9 && b1 != "") {
                     //7
-                    Toast.makeText(this, "Winner is: $b1", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Winner is: $b1 in 7th", Toast.LENGTH_SHORT).show()
                     newGame()
                 } else if (b3 == b5 && b5 == b7 && b3 != "") {
                     //8
-                    Toast.makeText(this, "Winner is: $b3", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Winner is: $b3 in 8th", Toast.LENGTH_SHORT).show()
                     newGame()
                 } else if (b1 != "" && b2 != "" && b3 != "" &&
                            b4 != "" && b5 != "" && b6 != "" &&
                            b7 != "" && b8 != "" && b9 != ""){
-                    Toast.makeText(this, "Game is Drawn", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Game is Drawn last", Toast.LENGTH_SHORT).show()
                     newGame()
                 }
             }
@@ -127,7 +127,7 @@ class MainActivity : AppCompatActivity() {
         btn7.setText("")
         btn8.setText("")
         btn9.setText("")
-        count =0
+        count = 0
         flag = 0
     }
 }
